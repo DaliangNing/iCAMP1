@@ -1,14 +1,28 @@
 # iCAMP analysis example: SimpleOTU
 
-1. System requirements:
-1.1. Operating systems: Windows, or Mac, or Linux, any versions which can run R (version >= 3.2)
+## 1. System requirements
+
+1.1- Operating systems: Windows, or Mac, or Linux, any versions which can run R (version >= 3.2).
+
 1.2- Dependencis: R (version >=3.2; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory.
+
 1.3- iCAMP current version 1.1.3 has been tested on R 3.5.3, R3.6.2, and R4.0.0. 
+
 1.4- Any required non-standard hardware: No.
 
-2- Installation guide
-2.1- Downlaod and install R (https://www.r-project.org/)
-2.2- Open R, click Packages/install package from local file, then select the file.
+## 2. Installation guide
+
+2.1- Downlaod and install R (https://www.r-project.org/).
+
+2.2- Install iCAMP.
+
+- Install published iCAMP: Open R, use function "install.packages" as below.
+
+```
+install.packages("iCAMP")
+```
+
+Open R, click Packages/install package from local file, then select the file.
 
 For windows, select the .zip file. For Mac/Linux, select the .gz file.
 Alternatively, in Linux sytem, if you open R in a terminal, use following command to install from the .gz file (revise "/Path/to/the/folder" to the real path of this folder on your computer, revise "xxx" to the version number of iCAMP):
