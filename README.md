@@ -5,7 +5,7 @@ Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysi
 
 - Operating systems: Windows, or Mac, or Linux, any versions which can run R (version >= 3.2).
 
-- Dependencis: R (version >=3.2; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory.
+- Dependencis: R (version >=3.2; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest.
 
 - iCAMP current version 1.1.3 has been tested on R 3.5.3, R3.6.2, and R4.0.0. 
 
