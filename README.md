@@ -20,7 +20,7 @@ Daliang Ning
 
 - Install iCAMP.
 
-  - Install published iCAMP: Open R, use function "install.packages" as below.
+  - Install published iCAMP: Open R, use function "install.packages" as below. (i am still polishing the package, not submitted yet. 2020.8.15)
   ```
   install.packages("iCAMP")
   ```
