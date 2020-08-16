@@ -30,7 +30,9 @@ install.packages("iCAMP")
 install.packages(pkgs="/Path/to/the/folder/iCAMP_xxx.tar.gz", repos = NULL, type="source")
 ```
   - In R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest.
-
+```
+install.packages(c("vegan", "parallel", "permute", "ape", "bigmemory", "nortest"))
+```
 2.3- The whole installation typically takes several minutes. Usually, <5 min for R installation, <1 min for the iCAMP package, <2 min for installation of other packages.
 
 ## 3- Demo
