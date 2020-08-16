@@ -18,18 +18,16 @@ Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysi
 - Install iCAMP.
 
   - Install published iCAMP: Open R, use function "install.packages" as below.
-```
-install.packages("iCAMP")
-```
-
+  ```
+  install.packages("iCAMP")
+  ```
   - Install another version:
     - Download an iCAMP version from this repository iCAMP1/RPackage/AllVersions.
     - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest.
     ```
     install.packages(c("vegan", "parallel", "permute", "ape", "bigmemory", "nortest"))
     ```   
-    - In R, click Packages/install package from local file, then select the file. For windows, select the .zip file. For Mac/Linux, select the .gz file.
-  Alternatively, in Linux sytem, if you open R in a terminal, use following command to install from the .gz file (revise "/Path/to/the/folder" to the real path of the .gz file on your computer, revise "xxx" to the version number of iCAMP):
+    - In R, click Packages/install package from local file, then select the file. For windows, select the .zip file. For Mac/Linux, select the .gz file. Alternatively, in Linux sytem, if you open R in a terminal, use following command to install from the .gz file (revise "/Path/to/the/folder" to the real path of the .gz file on your computer, revise "xxx" to the version number of iCAMP):
     ```
     install.packages(pkgs="/Path/to/the/folder/iCAMP_xxx.tar.gz", repos = NULL, type="source")
     ```
