@@ -1,6 +1,9 @@
 # iCAMP1
 Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis (Version 1)
 
+Daliang Ning
+2020.8.15
+
 ## System requirements
 
 - Operating systems: Windows, or Mac, or Linux, any versions which can run R (version >= 3.2).
@@ -33,4 +36,15 @@ Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysi
     ```
 
 - The whole installation typically takes several minutes. Usually, <5 min for R installation, <1 min for the iCAMP package, <2 min for installation of other packages.
+
+## Instructions for use
+- Before analyze your own data with iCAMP, you may go through a simple example dataset in the folder /Examples/SimpleOTU.
+
+- When analyzing your own data, check the format of the example data files (otu.txt, tree.nwk, treat2col.txt, and environment.txt) in the folder "SimpleOTU". Revise your data files to the same format. It is fine if you do not have environment factor information, just pay attention to the notes specific to no-env.file situation in the file "icamp.test.r".
+
+- Change the folder paths and file names in the "icamp.test.r" to your data as indicated. 
+
+- Change the thread number for parallel computing, memory limitation, and other parameter setting according to your need. You may check the help document of each function for detailed explanation.
+
+- Run the codes and check the output files in the output folder you've specified. You may check the ReadMe.md in /Examples/SimpleOTU for the meaning of each output file, as well as the help documents in the R package for details.
 
