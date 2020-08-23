@@ -1,0 +1,5 @@
+new("big.matrix.descriptor", description = list(sharedType = "FileBacked", 
+    filename = "temperature.ND.bin", dirname = "E:/Dropbox/ToolDevelop/package/iCAMP/LatestVersion/Example/TestOutputs20/", 
+    totalRows = 30L, totalCols = 30L, rowOffset = c(0, 30), colOffset = c(0, 
+    30), nrow = 30, ncol = 30, rowNames = NULL, colNames = NULL, 
+    type = "double", separated = FALSE))
