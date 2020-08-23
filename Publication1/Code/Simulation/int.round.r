@@ -1,0 +1,19 @@
+int.round<-function(v,sum.exp)
+{
+  vrd=round((v/sum(v))*sum.exp)
+  delta=sum(vrd)-sum.exp
+  if(delta!=0)
+  {
+    if(delta<0){d1=1}else{d1=-1}
+    ss.delt=(((vrd+d1)/(sum(vrd)+d1))-(v/sum(v)))^2
+    t=1
+    while(delta!=0 & t<sum.exp)
+    {
+      vrd[which.min(ss.delt)]=vrd[which.min(ss.delt)]+d1
+      delta=sum(vrd)-sum.exp
+      ss.delt=(((vrd+d1)/(sum(vrd)+d1))-(v/sum(v)))^2
+      t=t+1
+    }
+  }
+  vrd
+}
