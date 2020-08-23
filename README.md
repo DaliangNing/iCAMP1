@@ -6,20 +6,24 @@ Daliang Ning
 ## News
 
 ## Key functions in iCAMP package
-- [**iCAMP**](https://doi.org/doi:10.1101/2020.02.22.960872): Quantify relative importance of basic community assembly processes at both community and phylogenetic group ('bin') levels.  
+- [**iCAMP**](https://doi.org/10.1101/2020.02.22.960872): Quantify relative importance of basic community assembly processes at both community and phylogenetic group ('bin') levels.  
   - Based on phylogenetic marker gene sequencing results, e.g. OTU or ASV table and phylogenetic tree from 16S sequencing data.
   - The processes including homogeneous and heterogeneous selection, homoginizing and limited dispersal, and 'drift' (drift and other processes)
   - Quantitative for each turnover (between two samples) at community level, and for each phylogenetic bin in a group of samples.
   - Each phylogenetic bin is usually a group of taxa (a few dozens to a few hundreds of OTUs or ASVs) from a family or order.
   - key function: icamp.big
 - To implement some other published methods
-  - **NP**: Neutral taxa percentage, i.e. number or relative abundance of taxa following neutral theory model.
-    - add options to perform bootstraping test and set multiple metacommunities (different regional pools).
-    - key function: snm.comm
-  - **QPEN**: quantifying community assembly processes based on entire-community null model analysis. 
-    - add options to handle big datasets and set multiple metacommunities.
-    - key function: qpen
-  - **tNST** and **pNST**: Our another R package NST has functions to calculate taxonomic and phylogenetic normalized stochasticity ratio.
+  - [**NP**](https://doi.org/10.1038/ismej.2015.142): Neutral taxa percentage, i.e. number or relative abundance of taxa following neutral theory model.
+    - developed by [Burns et al (2016 ISME J)](https://doi.org/10.1038/ismej.2015.142), based on a neutral theory model [(Sloan et al 2006 EM)](https://doi.org/10.1111/j.1462-2920.2005.00956.x).
+    - I add options to perform bootstraping test and re-define taxa abundance profile in one or multiple metacommunities (regional pools).
+    - function: snm.comm
+  - [**QPEN**](https://doi.org/10.1038/ismej.2013.93): quantifying community assembly processes based on entire-community null model analysis. 
+    - developed by Stegen et al ([2013 ISME J](https://doi.org/10.1038/ismej.2013.93), [2015 Front Microbiol](https://doi.org/10.3389/fmicb.2015.00370)).
+    - I add options to handle big datasets and re-define taxa abundance profile in the metacommunity.
+    - function: qpen
+  - [**tNST** and **pNST**](https://doi.org/10.1073/pnas.1904623116): taxonomic and phylogenetic normalized stochasticity ratio.
+    - Not in iCAMP, but in our another R package [NST](https://cran.r-project.org/web/packages/NST/index.html)
+    - We developed NST ([Ning et al 2019 PNAS](https://doi.org/10.1073/pnas.1904623116)) from previous stochasticity ratio ([Zhou et al 2014 PNAS](https://doi.org/10.1073/pnas.1324044111)).
 - Some handy functions for big datasets
   - phylogenetic and taxonomic **null model analysis** at both community and bin levels
     - functions: bNTIn.p, bNTI.bin.big, bNRIn.p, bNRI.bin.big, RC.pc, RC.bin.bigc
