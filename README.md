@@ -6,28 +6,28 @@ Daliang Ning
 ## News
 
 ## Key functions in iCAMP package
-- iCAMP: Quantify relative importance of basic community assembly processes at both community and phylogenetic group ('bin') levels.  
+- **iCAMP**: Quantify relative importance of basic community assembly processes at both community and phylogenetic group ('bin') levels.  
   - Based on phylogenetic marker gene sequencing results, e.g. OTU or ASV table and phylogenetic tree from 16S sequencing data.
   - The processes including homogeneous and heterogeneous selection, homoginizing and limited dispersal, and 'drift' (drift and other processes)
   - Quantitative for each turnover (between two samples) at community level, and for each phylogenetic bin in a group of samples.
   - Each phylogenetic bin is usually a group of taxa (a few dozens to a few hundreds of OTUs or ASVs) from a family or order.
   - key function: icamp.big
 - To implement some other published methods
-  - NP: Neutral taxa percentage, i.e. number or relative abundance of taxa following neutral theory model.
+  - **NP**: Neutral taxa percentage, i.e. number or relative abundance of taxa following neutral theory model.
     - add options to perform bootstraping test and set multiple metacommunities (different regional pools).
     - key function: snm.comm
-  - QPEN: quantifying community assembly processes based on entire-community null model analysis. 
+  - **QPEN**: quantifying community assembly processes based on entire-community null model analysis. 
     - add options to handle big datasets and set multiple metacommunities.
     - key function: qpen
-  - Our another R package NST has functions to calculate taxonomic and phylogenetic normalized stochasticity ratio (tNST and pNST).
+  - **tNST** and **pNST**: Our another R package NST has functions to calculate taxonomic and phylogenetic normalized stochasticity ratio.
 - Some handy functions for big datasets
-  - phylogenetic and taxonomic null model analysis at both community and bin levels
+  - phylogenetic and taxonomic **null model analysis** at both community and bin levels
     - functions: bNTIn.p, bNTI.bin.big, bNRIn.p, bNRI.bin.big, RC.pc, RC.bin.bigc
-  - between-taxa niche difference and phylogenetic distance calculation
+  - between-taxa **niche difference** and **phylogenetic distance** of big communities
     - functions: dniche, pdist.big
-  - phylogenetic signal test within phylogenetic groups
+  - **phylogenetic signal** test within phylogenetic groups
     - function: ps.bin
-  - midpoint root of big trees
+  - **midpoint root** of big trees
     - function: midpoint.root.big
 
 ## Publication
