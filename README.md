@@ -12,7 +12,7 @@ Daliang Ning  2020.8.23
   - The processes including homogeneous and heterogeneous selection, homoginizing and limited dispersal, and 'drift' (drift and other processes)
   - Quantitative for each turnover (between two samples) at community level, and for each phylogenetic bin in a group of samples.
   - Each phylogenetic bin is usually a group of taxa (a few dozens to a few hundreds of OTUs or ASVs) from a family or order.
-  - key function: icamp.big
+  - key function: icamp.big ([Ning et al 2020 Nat Commun in revision](https://doi.org/10.1101/2020.02.22.960872))
 - To implement some other published methods
   - [**NP**](https://doi.org/10.1038/ismej.2015.142): Neutral taxa percentage, i.e. number or relative abundance of taxa following neutral theory model.
     - developed by [Burns et al (2016 ISME J)](https://doi.org/10.1038/ismej.2015.142), based on a neutral theory model [(Sloan et al 2006 EM)](https://doi.org/10.1111/j.1462-2920.2005.00956.x).
