@@ -6,7 +6,7 @@ Daliang Ning
 ## News
 
 ## Key functions in iCAMP package
-- **iCAMP**: Quantify relative importance of basic community assembly processes at both community and phylogenetic group ('bin') levels.  
+- [**iCAMP**](https://doi.org/doi:10.1101/2020.02.22.960872): Quantify relative importance of basic community assembly processes at both community and phylogenetic group ('bin') levels.  
   - Based on phylogenetic marker gene sequencing results, e.g. OTU or ASV table and phylogenetic tree from 16S sequencing data.
   - The processes including homogeneous and heterogeneous selection, homoginizing and limited dispersal, and 'drift' (drift and other processes)
   - Quantitative for each turnover (between two samples) at community level, and for each phylogenetic bin in a group of samples.
@@ -38,11 +38,12 @@ Ning, D., Yuan, M., Wu, L., Zhang, Y., Guo, X., Zhou, X. et al. (2020). A quanti
 
 - Operating systems: Windows, or Mac, or Linux, any versions which can run R (version >= 3.2).
 
-- Dependencis: R (version >=3.2; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest.
+- Dependencis: R (version >=3.2; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4.
+  - R package NST is necessary to run the funciton tNST and pNST in the example, but not required for running package iCAMP.
 
-- iCAMP current version 1.1.3 has been tested on R 3.5.3, R3.6.2, and R4.0.0. 
+- iCAMP current version 1.2.4 has been tested on the current development version of R (4.1.0, 2020-8-18 r79041), R 4.0.2, and R 3.5.3. 
 
-- Any required non-standard hardware: No.
+- Any required non-standard hardware: No. However, if you are dealing with a large dataset (e.g. >20,000 taxa), a server with enough CPU threads (e.g. >=20) is preferred to finish the calculation in reasonable time.
 
 ### Installation guide
 
@@ -50,22 +51,23 @@ Ning, D., Yuan, M., Wu, L., Zhang, Y., Guo, X., Zhou, X. et al. (2020). A quanti
 
 - Install iCAMP.
 
-  - Install published iCAMP: Open R, use function "install.packages" as below. (i am still polishing the package, not submitted yet. 2020.8.15)
+  - Install published iCAMP: Open R, use function "install.packages" as below. Not availabe yet.
+    - R submission team is on vacation now. the package will be submitted after 2020.8.24. then, it will be available to install from R soon.
   ```
   install.packages("iCAMP")
   ```
-  - Install another version:
+  - Install from source file:
     - Download an iCAMP version from this repository iCAMP1/RPackage/AllVersions.
     - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest.
     ```
-    install.packages(c("vegan", "parallel", "permute", "ape", "bigmemory", "nortest"))
+    install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc"))
     ```   
     - In R, click Packages/install package from local file, then select the file. For windows, select the .zip file. For Mac/Linux, select the .gz file. Alternatively, in Linux sytem, if you open R in a terminal, use following command to install from the .gz file (revise "/Path/to/the/folder" to the real path of the .gz file on your computer, revise "xxx" to the version number of iCAMP):
     ```
     install.packages(pkgs="/Path/to/the/folder/iCAMP_xxx.tar.gz", repos = NULL, type="source")
     ```
 
-- The whole installation typically takes several minutes. Usually, <5 min for R installation, <1 min for the iCAMP package, <2 min for installation of other packages.
+- The whole installation typically takes several minutes. Usually, <5 min for R installation, <1 min for the iCAMP package, <5 min for installation of other packages.
 
 ### Instructions for use
 - Before analyze your own data with iCAMP, you may go through a simple example dataset in the folder /Examples/SimpleOTU.
