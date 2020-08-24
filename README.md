@@ -4,8 +4,8 @@ Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysi
 Daliang Ning  2020.8.24
 
 ## News
-2020.8.24 iCAMP v1.2.4 has been submitted to CRAN.
-2020.8.23 upload iCAMP package (v1.2.4) and the code/data for the first iCAMP manuscript to GitHub.
+- 2020.8.24 iCAMP v1.2.4 has been submitted to CRAN.
+- 2020.8.23 upload iCAMP package (v1.2.4) and the code/data for the first iCAMP manuscript to GitHub.
 
 ## Key functions in iCAMP package
 - [**iCAMP**](https://doi.org/10.1101/2020.02.22.960872): Quantify relative importance of basic community assembly processes at both community and phylogenetic group ('bin') levels.  
