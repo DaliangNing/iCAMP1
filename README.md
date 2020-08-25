@@ -1,7 +1,7 @@
 # iCAMP
 Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis (Version 1)
 
-Daliang Ning  2020.8.24
+Daliang Ning  2020.8.25
 
 ## News
 - 2020.8.25 iCAMP v1.2.5 fixed some typo and memory.limit issue, and is submitted back to CRAN.
