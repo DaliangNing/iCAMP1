@@ -1,7 +1,9 @@
 # iCAMP
 Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis (Version 1)
+Daliang Ning  2020.9.19
 
-Daliang Ning  2020.9.9
+## Publication
+Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, and Zhou J. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717 (2020) doi:10.1038/s41467-020-18560-z.
 
 ## News
 - 2020.9.18 iCAMP paper is published on Nature Communications. https://doi.org/10.1038/s41467-020-18560-z
@@ -38,9 +40,6 @@ Daliang Ning  2020.9.9
     - function: ps.bin
   - **midpoint root** of big trees
     - function: midpoint.root.big
-
-## Publication
-Ning, D., Yuan, M., Wu, L., Zhang, Y., Guo, X., Zhou, X. et al. (2020). A quantitative framework reveals the ecological drivers of grassland soil microbial community assembly in response to warming. bioRxiv. doi:10.1101/2020.02.22.960872.
 
 ## How to use
 ### System requirements
