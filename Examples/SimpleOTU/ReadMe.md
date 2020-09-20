@@ -1,5 +1,5 @@
 # iCAMP analysis example: SimpleOTU
-Daliang Ning. 2020.8.23
+Daliang Ning. 2020.9.20
 
 ## 1. System requirements
 
@@ -17,7 +17,7 @@ Daliang Ning. 2020.8.23
 
 2.2- Install iCAMP.
 
-- iCAMP will be available from CRAN soon. Then, you can install it directly in R with following code.
+- iCAMP is available from CRAN now. You can install it directly in R with following code.
 ```
 install.packages("iCAMP")
 ```
