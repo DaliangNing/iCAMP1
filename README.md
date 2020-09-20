@@ -60,8 +60,7 @@ Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, an
 
 - Install iCAMP.
 
-  - Install published iCAMP: Open R, use function "install.packages" as below. Not availabe yet.
-    - R submission team is on vacation now. the package will be submitted after 2020.8.24. then, it will be available to install from R soon.
+  - Install published iCAMP: Open R, use function "install.packages" as below.
   ```
   install.packages("iCAMP")
   ```
