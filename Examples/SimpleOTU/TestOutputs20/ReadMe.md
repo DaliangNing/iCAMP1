@@ -64,4 +64,8 @@
 
 (32-35) Test.pNST.summary.Management.csv, Test.pNST.pairwise.Management.csv, Test.pNST.bootstr.Management.csv, and Test.pNST.compare.Management.csv: phylogenetic normalized stochasticity ratio (pNST) results, the same as those for tNST. Please find details in the help document of function 'pNST' and 'nst.boot' in package 'NST'.
 
+(36) Test.Taxon_Bin.csv: iCAMP output, a matrix showing the bin ID and classification information for each taxon.
+
+(37) Test.Bin_TopTaxon.csv: iCAMP output, a matrix showing the bin relative abundance; the top taxon ID, percentage in bin, and classification; the most abundant name at each phylogeny level in the bin.
+
 ## End
