@@ -1,4 +1,5 @@
 # version 2020.8.23
+# version 2020.9.21 add classification information
 rm(list=ls())
 t0=Sys.time() # to calculate time cost
 
@@ -11,6 +12,9 @@ com.file="otus.txt"
 
 # the phylogenetic tree file
 tree.file="tree.nwk"
+
+# the classification (taxonomy) information
+clas.file="classification.txt"
 
 # the treatment informaiton table
 treat.file="treat2col.txt"
@@ -37,6 +41,9 @@ comm=t(read.table(com.file, header = TRUE, sep = "\t", row.names = 1,
                   as.is = TRUE, stringsAsFactors = FALSE, comment.char = "",
                   check.names = FALSE))
 tree=read.tree(file = tree.file)
+clas=read.table(clas.file, header = TRUE, sep = "\t", row.names = 1,
+                as.is = TRUE, stringsAsFactors = FALSE, comment.char = "",
+                check.names = FALSE)
 treat=read.table(treat.file, header = TRUE, sep = "\t", row.names = 1,
                  as.is = TRUE, stringsAsFactors = FALSE, comment.char = "",
                  check.names = FALSE)
@@ -56,10 +63,11 @@ comm=comm[,colSums(comm)>0,drop=FALSE] # if some unmatched samples were removed,
 env=sampid.check$env # skip this if you do not have env.file
 
 # 5 # match OTU IDs in OTU table and tree file
-spid.check=match.name(cn.list=list(comm=comm),tree.list=list(tree=tree))
+spid.check=match.name(cn.list=list(comm=comm),rn.list=list(clas=clas),tree.list=list(tree=tree))
 # for the example data, the output should be "All match very well".
 # for your data files, if you have not matched the IDs before, the unmatched OTUs will be removed.
 comm=spid.check$comm
+clas=spid.check$clas
 tree=spid.check$tree
 
 # 6 # calculate pairwise phylogenetic distance matrix.
@@ -221,13 +229,16 @@ icres.omit2=iCAMP::icamp.big(comm=comm, pd.desc = pd.big$pd.file, pd.spname=pd.b
 
 # 10 # iCAMP bin level statistics
 icbin=icamp.bins(icamp.detail = icres$detail,treat = treat,
-                 clas=NULL,silent=FALSE, boot = TRUE,
+                 clas=clas,silent=FALSE, boot = TRUE,
                  rand.time = rand.time,between.group = TRUE)
 save(icbin,file = paste0(prefix,".iCAMP.Summary.rda")) # just to archive the result. rda file is automatically compressed, and easy to load into R.
 write.csv(icbin$Pt,file = paste0(prefix,".ProcessImportance_EachGroup.csv"),row.names = FALSE)
 write.csv(icbin$Ptk,file = paste0(prefix,".ProcessImportance_EachBin_EachGroup.csv"),row.names = FALSE)
 write.csv(icbin$Ptuv,file = paste0(prefix,".ProcessImportance_EachTurnover.csv"),row.names = FALSE)
 write.csv(icbin$BPtk,file = paste0(prefix,".BinContributeToProcess_EachGroup.csv"),row.names = FALSE)
+write.csv(data.frame(ID=rownames(icbin$Class.Bin),icbin$Class.Bin,stringsAsFactors = FALSE),
+          file = paste0(prefix,".Taxon_Bin.csv"),row.names = FALSE)
+write.csv(icbin$Bin.TopClass,file = paste0(prefix,".Bin_TopTaxon.csv"),row.names = FALSE)
 
 # output files:
 # Test.iCAMP.Summary.rda: the object "icbin" saved in R data format. see help document of the function icamp.bins for description of each element in the object.
@@ -235,6 +246,8 @@ write.csv(icbin$BPtk,file = paste0(prefix,".BinContributeToProcess_EachGroup.csv
 # Test.ProcessImportance_EachBin_EachGroup.csv: Relative importance of each process in governing the turnovers of each bin among a group of samples.
 # Test.ProcessImportance_EachTurnover.csv: Relative importance of each process in governing the turnovers between each pair of communities (samples).
 # Test.BinContributeToProcess_EachGroup.csv: Bin contribution to each process, measuring the contribution of each bin to the relative importance of each process in the assembly of a group of communities.
+# Test.Taxon_Bin.csv: a matrix showing the bin ID and classification information for each taxon.
+# Test.Bin_TopTaxon.csv: a matrix showing the bin relative abundance; the top taxon ID, percentage in bin, and classification; the most abundant name at each phylogeny level in the bin.
 
 # 11 # Bootstrapping test
 # please specify which column in the treatment information table.
