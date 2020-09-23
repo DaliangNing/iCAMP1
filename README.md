@@ -5,6 +5,7 @@ Daliang Ning  2020.9.20
 - Downloaded **324** times till 2020.9.19.
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
+- 2020.9.22 Media reports: [OU-VPR news](https://ou.edu/research-norman/news-events/2020/study-expands-understanding-of-ecological-factors-driving-microbial-community-assembly-in-response-to-warming), [EurekAlert!](https://www.eurekalert.org/pub_releases/2020-09/uoo-efd092220.php), [Phy.Org](https://phys.org/news/2020-09-ecological-factors-microbial-response.html)
 - 2020.9.18 iCAMP paper is published on Nature Communications. https://doi.org/10.1038/s41467-020-18560-z
 - 2020.9.9  iCAMP v1.2.8 has been published on CRAN. https://cran.r-project.org/web/packages/iCAMP/
 - 2020.8.25 iCAMP v1.2.5 fixed some typo and memory.limit issue, and is submitted back to CRAN.
