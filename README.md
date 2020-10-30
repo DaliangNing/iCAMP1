@@ -2,7 +2,7 @@
 Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis (Latest version 1.2.10)
 
 Daliang Ning  2020.9.20
-- Downloaded **874** times from 2020.9.9 to 2020.10.10.
+- Downloaded **1166** times from 2020.9.9 to 2020.10.28.
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
 - 2020.9.22 Media reports: [OU-VPR news](https://ou.edu/research-norman/news-events/2020/study-expands-understanding-of-ecological-factors-driving-microbial-community-assembly-in-response-to-warming), [EurekAlert!](https://www.eurekalert.org/pub_releases/2020-09/uoo-efd092220.php), [Phy.Org](https://phys.org/news/2020-09-ecological-factors-microbial-response.html)
