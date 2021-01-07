@@ -38,7 +38,7 @@ install.packages("iCAMP")
 ## 3- Demo
 3.1- Please check the **icamp.test.r** in the this folder, and follow the detailed instruction in the file to run iCAMP analysis for the example data.
 
-3.2- Expected output: example output files have been saved in the subfolder. Detailed explanation can also be found in the file "icamp.test.r".
+3.2- Expected output: example output files have been saved in the subfolder **TestOutputs26**. Detailed explanation can also be found in the file "icamp.test.r".
 - Output files:
 
 (1) path.rda: a R object to list all the nodes and  edge lengthes from root to every tip. saved in R data format. It is an intermediate output when claculating phylogenetic distance matrix.
