@@ -1,0 +1,5 @@
+ds,n.min,index,r.cutoff,p.cutoff,pH.pearson,temperature.pearson
+0.2,5,RAsig,0.1,0.05,0,0
+0.2,5,RAsig.adj,0.1,0.05,0,0
+0.2,5,MeanR.sig,0.1,0.05,NA,NA
+0.2,5,MeanR,NA,NA,-0.022600742718388,-0.0448575679498364
