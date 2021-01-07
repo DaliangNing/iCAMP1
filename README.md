@@ -2,10 +2,10 @@
 Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis (Latest version 1.3.3)
 
 Daliang Ning
-- Downloaded **1725** times from 2020.9.9 to 2020.12.1.
+- Downloaded **2250** times from 2020.9.9 to 2021.1.6.
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
-- 2021.1.7 iCAMP v1.3.3 improved function qpen and added function icamp.cate to summary for different categories (e.g. core vs rare taxa). New example is updated in the subfolder **Example**.
+- 2021.1.7 iCAMP v1.3.3 improved function qpen and added function icamp.cate to summary for different categories (e.g. core vs rare taxa). New example is updated in the subfolder **Examples**.
 - 2020.9.22 Media reports: [OU-VPR news](https://ou.edu/research-norman/news-events/2020/study-expands-understanding-of-ecological-factors-driving-microbial-community-assembly-in-response-to-warming), [EurekAlert!](https://www.eurekalert.org/pub_releases/2020-09/uoo-efd092220.php), [Phy.Org](https://phys.org/news/2020-09-ecological-factors-microbial-response.html)
 - 2020.9.18 iCAMP paper is published on Nature Communications. https://doi.org/10.1038/s41467-020-18560-z
 - 2020.9.9  iCAMP v1.2.8 has been published on CRAN. https://cran.r-project.org/web/packages/iCAMP/
