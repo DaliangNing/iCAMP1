@@ -1,5 +1,5 @@
 # iCAMP analysis example: SimpleOTU
-Daliang Ning. 2020.9.21
+Daliang Ning. 2021.1.7
 
 ## 1. System requirements
 
@@ -7,7 +7,7 @@ Daliang Ning. 2020.9.21
 
 1.2- Dependencis: R (version >=3.5; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4. R package NST is necessary to run the funciton tNST and pNST in the demo, but not required for running package iCAMP.
 
-1.3- iCAMP current version 1.2.4 has been tested on the current development version of R (4.1.0, 2020-8-18 r79041), R 4.0.2, and R 3.5.3.
+1.3- iCAMP current version 1.3.3 has been tested on the current development version of R (4.1.0, 2021-01-07 r79800), R 4.0.3, and R 3.5.3.
 
 1.4- Any required non-standard hardware: No. However, if you are dealing with a large dataset (e.g. >20,000 taxa), a server with enough CPU threads (e.g. >=20) is preferred to finish the calculation in reasonable time.
 
@@ -108,6 +108,10 @@ install.packages("iCAMP")
 (36) Test.Taxon_Bin.csv: iCAMP output, a matrix showing the bin ID and classification information for each taxon.
 
 (37) Test.Bin_TopTaxon.csv: iCAMP output, a matrix showing the bin relative abundance; the top taxon ID, percentage in bin, and classification; the most abundant name at each phylogeny level in the bin.
+
+(38) Test.iCAMP.Process_EachTurnover_EachCategory.csv: iCAMP output, a matrix showing the relative importance of each process in shaping the turnover of each category between each pair of samples. The category is defined in the input file category.txt.
+
+(39) Test.iCAMP.Process_EachGroup_EachCategory.csv: iCAMP output, a matrix showing the relative importance of each process in shaping the turnovers of each category among each group of samples.
 
 3.3- Expected run time: 6 to 12 min in a normal desktop computer.
 
