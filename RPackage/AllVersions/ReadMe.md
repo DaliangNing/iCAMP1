@@ -1,4 +1,5 @@
 # All versions of iCAMP package
+- Version 1.3.4: fixed typo and format issue.
 - Version 1.3.3: add icamp.cate to summary for each category of taxa, e.g. core versus rare taxa.
 - Version 1.3.2: revise icamp.bins to fix error when an input taxonomy name has unrecognizable character; revise icamp.boot to fix error when there is no outlier.
 - Version 1.3.1: add bNTI.big and bMNTD.big, and revise qpen to handle big datasets better.
