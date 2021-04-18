@@ -1,4 +1,4 @@
-#Example output files
+# Example output files
 
 (1) path.rda: a R object to list all the nodes and  edge lengthes from root to every tip. saved in R data format. It is an intermediate output when claculating phylogenetic distance matrix.
 
