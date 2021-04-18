@@ -7,7 +7,7 @@ Daliang Ning. 2021.1.7
 
 1.2- Dependencis: R (version >=3.5; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4. R package NST is necessary to run the funciton tNST and pNST in the demo, but not required for running package iCAMP.
 
-1.3- iCAMP current version 1.3.3 has been tested on the current development version of R (4.1.0, 2021-01-07 r79800), R 4.0.3, and R 3.5.3.
+1.3- iCAMP current version 1.4.3.
 
 1.4- Any required non-standard hardware: No. However, if you are dealing with a large dataset (e.g. >20,000 taxa), a server with enough CPU threads (e.g. >=20) is preferred to finish the calculation in reasonable time.
 
@@ -17,16 +17,16 @@ Daliang Ning. 2021.1.7
 
 2.2- Install iCAMP.
 
-- iCAMP is available from CRAN now. You can install it directly in R with following code.
+- iCAMP versions <=1.3.4 are available from CRAN, which can be installed directly in R with following code.
 ```
 install.packages("iCAMP")
 ```
 
 - Install another version:
-  - Download an iCAMP version from this repository iCAMP1/RPackage/AllVersions.
+  - Download an iCAMP version from this repository iCAMP1/RPackage/AllVersions (https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions).
   - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc.
   ```
-  install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc"))
+  install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc", "DirichletReg"))
   ```
   - Open R, click Packages/install package from local file, then select the file. For windows, select the .zip file. For Mac/Linux, select the .gz file. Alternatively, in Linux sytem, if you open R in a terminal, use following command to install from the .gz file (revise "/Path/to/the/folder" to the real path of the .gz file on your computer, revise "xxx" to the version number of iCAMP):
   ```
@@ -38,7 +38,7 @@ install.packages("iCAMP")
 ## 3- Demo
 3.1- Please check the **icamp.test.r** in the this folder, and follow the detailed instruction in the file to run iCAMP analysis for the example data.
 
-3.2- Expected output: example output files have been saved in the subfolder **TestOutputs26**. Detailed explanation can also be found in the file "icamp.test.r".
+3.2- Expected output: example output files have been saved in the subfolder **TestOutputs28**. Detailed explanation can also be found in the file "icamp.test.r".
 - Output files:
 
 (1) path.rda: a R object to list all the nodes and  edge lengthes from root to every tip. saved in R data format. It is an intermediate output when claculating phylogenetic distance matrix.
@@ -113,7 +113,15 @@ install.packages("iCAMP")
 
 (39) Test.iCAMP.Process_EachGroup_EachCategory.csv: iCAMP output, a matrix showing the relative importance of each process in shaping the turnovers of each category among each group of samples.
 
-3.3- Expected run time: 6 to 12 min in a normal desktop computer.
+(40) Test.OmitBinInform.csv: information of OTUs in omitted bins.
+
+(41) TestRA.iCAMP.Confidence.detail.rda: the object "icres6" saved in R data format. it is a list object, where the meaning of each element is the same as in the file "Test.iCAMP.Confidence.detail.rda". The input community marix indicates realtive abundance (values < 1) rather than counts. 
+
+(42) TestHel.iCAMP.Confidence.detail.rda: the object "icres7" saved in R data format. it is a list object, where the meaning of each element is the same as in the file "Test.iCAMP.Confidence.detail.rda". The input community marix is transformed with 'hellinger' method and the taxonomic dissimilarity index is 'euclidean' rather than the default 'Bray-Curtis'. 
+
+(43-46)  Test.QPEN.bootstrap.rda, Test.QPEN.Index.Obs.Summary.csv, Test.QPEN.Comparison.Summary.csv, and Test.QPEN.Bootstrapping.Summary.csv: the bootstrapping test of QPEN. Index.Obs.Summary includes the observed values of each index in each group. Bootstrapping.Summary includes the statistics of each index and each process based on the bootstrapping analysis. Comparison.Summary shows the effect size and significance of the difference between groups.
+
+3.3- Expected run time: for the example, 6 to 12 min in a normal desktop computer.
 
 ## 4- Instructions for use
 To analyze your own data with iCAMP:
