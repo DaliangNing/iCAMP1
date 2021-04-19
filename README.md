@@ -6,6 +6,7 @@ Daliang Ning
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
 - 2021.4.18 iCAMP v1.4.3 updated on [github](https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions), to allow relative abundances in community matrix and community data transformation.
+- 2021.4.15 iCAMP is highlighted on [DOE website](https://www.energy.gov/science/ber/articles/new-approach-helps-determine-how-much-microbial-community-composition-driven).
 - 2021.4.1 Frontiers in Microbilogy opens a research topic [**Community Assembly Mechanisms Shaping Microbiome Spatial or Temporal Dynamics**](https://www.frontiersin.org/research-topics/20916/).
 - 2021.1.9 iCAMP v1.3.4 updated on CRAN, improved function qpen and added function icamp.cate to summary for different categories (e.g. core vs rare taxa). New example is updated in the subfolder [**Examples**](https://github.com/DaliangNing/iCAMP1/tree/master/Examples/SimpleOTU).
 - 2020.9.22 Media reports: [OU-VPR news](https://ou.edu/research-norman/news-events/2020/study-expands-understanding-of-ecological-factors-driving-microbial-community-assembly-in-response-to-warming), [EurekAlert!](https://www.eurekalert.org/pub_releases/2020-09/uoo-efd092220.php), [Phy.Org](https://phys.org/news/2020-09-ecological-factors-microbial-response.html)
