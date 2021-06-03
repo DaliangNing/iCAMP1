@@ -53,7 +53,7 @@ Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, an
 
 - Operating systems: Windows, or Mac, or Linux, any versions which can run R (version >= 3.2).
 
-- Dependencis: R (version >=3.2; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4.
+- Dependencis: R (version >=3.2; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4, DirichletReg.
   - R package NST is necessary to run the funciton tNST and pNST in the example, but not required for running package iCAMP.
 
 - iCAMP current version 1.2.4 has been tested on the current development version of R (4.1.0, 2020-8-18 r79041), R 4.0.2, and R 3.5.3. 
@@ -66,15 +66,15 @@ Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, an
 
 - Install iCAMP.
 
-  - Install published iCAMP: Open R, use function "install.packages" as below.
+  - Install published iCAMP (version<=1.3.4): Open R, use function "install.packages" as below.
   ```
   install.packages("iCAMP")
   ```
-  - Install from source file:
+  - Install from source file (version>=1.4.1):
     - Download an iCAMP version from this repository iCAMP1/RPackage/AllVersions.
-    - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest.
+    - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, DirichletReg.
     ```
-    install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc"))
+    install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc", "DirichletReg"))
     ```   
     - In R, click Packages/install package from local file, then select the file. For windows, select the .zip file. For Mac/Linux, select the .gz file. Alternatively, in Linux sytem, if you open R in a terminal, use following command to install from the .gz file (revise "/Path/to/the/folder" to the real path of the .gz file on your computer, revise "xxx" to the version number of iCAMP):
     ```
