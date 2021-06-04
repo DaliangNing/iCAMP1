@@ -1,4 +1,5 @@
 # All versions of iCAMP package
+- Version 1.4.5: add option to taxa.binphy.big and icamp.big to handle trees with single edge from root.
 - Version 1.4.4: debug ps.bin and icamp.cate to avoid error in special cases.
 - Version 1.4.3: debug to allow input community matrix only has two samples. Also provide a temporary solution for the failure of makeCluster in some OS.
 - Version 1.4.2: add options in icamp.big, RC.pc, and RC.bin.bigc to allow relative abundances (value < 1) in community matrix, community data transformation, and use of other taxonomic dissimilarity indexes.
