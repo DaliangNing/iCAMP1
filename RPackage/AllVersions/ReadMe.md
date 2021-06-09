@@ -1,4 +1,5 @@
 # All versions of iCAMP package
+- Version 1.4.7: speed up qpen.test when there are numerous between-group comparisons.
 - Version 1.4.6: debug icamp.big, fix 'differing number of rows' issue in version 1.4.2 to 1.4.5.
 - Version 1.4.5: add option to taxa.binphy.big and icamp.big to handle trees with single edge from root.
 - Version 1.4.4: debug ps.bin and icamp.cate to avoid error in special cases.
