@@ -1,8 +1,8 @@
 # iCAMP
-Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis (Latest version 1.3.4)
+Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis (Latest version 1.4.7)
 
 Daliang Ning
-- Downloaded **4050** times from 2020.9.9 to 2021.4.17.
+- Downloaded **4917** times from 2020.9.9 to 2021.6.8.
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
 - 2021.4.18 iCAMP v1.4.3 updated on [github](https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions), to allow relative abundances in community matrix and community data transformation.
