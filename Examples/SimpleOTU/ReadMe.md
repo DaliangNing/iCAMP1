@@ -7,7 +7,7 @@ Daliang Ning. 2021.1.7
 
 1.2- Dependencis: R (version >=3.5; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4. R package NST is necessary to run the funciton tNST and pNST in the demo, but not required for running package iCAMP.
 
-1.3- iCAMP current version 1.4.3.
+1.3- iCAMP current version 1.4.7.
 
 1.4- Any required non-standard hardware: No. However, if you are dealing with a large dataset (e.g. >20,000 taxa), a server with enough CPU threads (e.g. >=20) is preferred to finish the calculation in reasonable time.
 
@@ -24,10 +24,10 @@ install.packages("iCAMP")
 
 - Install another version:
   - Download an iCAMP version from this repository iCAMP1/RPackage/AllVersions (https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions).
-  - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc.
-  ```
-  install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc", "DirichletReg"))
-  ```
+  - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, DirichletReg, data.table.    
+```
+install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc", "DirichletReg", "data.table"))
+```
   - Open R, click Packages/install package from local file, then select the file. For windows, select the .zip file. For Mac/Linux, select the .gz file. Alternatively, in Linux sytem, if you open R in a terminal, use following command to install from the .gz file (revise "/Path/to/the/folder" to the real path of the .gz file on your computer, revise "xxx" to the version number of iCAMP):
   ```
   install.packages(pkgs="/Path/to/the/folder/iCAMP_xxx.tar.gz", repos = NULL, type="source")
