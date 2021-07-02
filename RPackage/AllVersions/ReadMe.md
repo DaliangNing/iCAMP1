@@ -1,4 +1,8 @@
 # All versions of iCAMP package
+- Version 1.4.11: debug for function icamp.boot.
+- Version 1.4.10: fix a potential bug in function maxbigm.
+- Version 1.4.9: internal version.
+- Version 1.4.8: fix a bug in function taxa.binphy.big.
 - Version 1.4.7: speed up qpen.test when there are numerous between-group comparisons.
 - Version 1.4.6: debug icamp.big, fix 'differing number of rows' issue in version 1.4.2 to 1.4.5.
 - Version 1.4.5: add option to taxa.binphy.big and icamp.big to handle trees with single edge from root.
