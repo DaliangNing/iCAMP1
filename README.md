@@ -47,10 +47,22 @@ Daliang Ning
 
 ## Publications
 ### Our studies
-Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, and Zhou J. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717 (2020) [doi:10.1038/s41467-020-18560-z](https://doi.org/10.1038/s41467-020-18560-z).
-Aslani F, Geisen S, Ning D, Tedersoo L, and Bahram M. 2021. Towards revealing the global diversity and community assembly of soil eukaryotes. Ecology Letters https://doi.org/10.1111/ele.13904.
+- Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, and Zhou J. 2020. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717. https://doi.org/10.1038/s41467-020-18560-z.
+- Aslani F, Geisen S, Ning D, Tedersoo L, and Bahram M. 2021. Towards revealing the global diversity and community assembly of soil eukaryotes. Ecology Letters https://doi.org/10.1111/ele.13904.
+- Wang A, Shi K, Ning D, Cheng H, Wang H, Liu W, Gao S, Li Z, Han J, Liang B, and Zhou J. 2021. Electrical selection for planktonic sludge microbial community function and assembly. Water Research 206, 117744. https://doi.org/10.1016/j.watres.2021.117744.
+- Ceja-Navarro JA, Wang Y, Ning D, Arellano A, Ramanculova L, Yuan MM, Byer A, Craven KD, Saha MC, Brodie EL, Pett-Ridge J, and Firestone MK. 2021. Protist diversity and community complexity in the rhizosphere of switchgrass are dynamic as plants develop. Microbiome 9, 96. https://doi.org/10.1186/s40168-021-01042-9.
+- Sun C, Zhang B, Ning D, Zhang Y, Dai T, Wu L, Li T, Liu W, Zhou J, and Wen X. 2021. Seasonal dynamics of the microbial community in two full-scale wastewater treatment plants: Diversity, composition, phylogenetic group based assembly and co-occurrence pattern. Water Research 200, 117295. https://doi.org/10.1016/j.watres.2021.117295.
 
-
+### Other examples
+- Dong Y, Sanford RA, Connor L, Chee-Sanford J, Wimmer BT, Iranmanesh A, Shi L, Krapac IG, Locke RA, and Shao H. 2021. Differential structure and functional gene response to geochemistry associated with the suspended and attached shallow aquifer microbiomes from the Illinois Basin, IL. Water Research 202, 117431. https://doi.org/10.1016/j.watres.2021.117431.
+- Maciá-Vicente JG and Popa F. 2021. Local endemism and ecological generalism in the assembly of root-colonizing fungi. Ecological Monographs n/a, e1489. https://doi.org/10.1002/ecm.1489.
+- Matar GK, Ali M, Bagchi S, Nunes S, Liu W-T, and Saikaly PE. 2021. Relative Importance of Stochastic Assembly Process of Membrane Biofilm Increased as Biofilm Aged. Frontiers in Microbiology 12 https://doi.org/10.3389/fmicb.2021.708531.
+- Stopnisek N and Shade A. 2021. Persistent microbiome members in the common bean rhizosphere: an integrated analysis of space, time, and plant genotype. The Isme Journal 15, 2708-2722. https://doi.org/10.1038/s41396-021-00955-5.
+- Sun Y, Zhang M, Duan C, Cao N, Jia W, Zhao Z, Ding C, Huang Y, and Wang J. 2021. Contribution of stochastic processes to the microbial community assembly on field-collected microplastics. Environmental Microbiology n/a https://doi.org/10.1111/1462-2920.15713.
+- Wang Y, Lu G, Yu H, Du X, He Q, Yao S, Zhao L, Huang C, Wen X, and Deng Y. 2021. Meadow degradation increases spatial turnover rates of the fungal community through both niche selection and dispersal limitation. Science of the Total Environment 798, 149362. https://doi.org/10.1016/j.scitotenv.2021.149362.
+- Xie J, Wang X, Xu J, Xie H, Cai Y, Liu Y, and Ding X. 2021. Strategies and Structure Feature of the Aboveground and Belowground Microbial Community Respond to Drought in Wild Rice (Oryza longistaminata). Rice 14, 79. https://doi.org/10.1186/s12284-021-00522-8.
+- Zhou R, Wang H, Wei D, Zeng S, Hou D, Weng S, He J, and Huang Z. 2021. Bacterial and eukaryotic community interactions might contribute to shrimp culture pond soil ecosystem at different culture stages. Soil Ecology Letters https://doi.org/10.1007/s42832-021-0082-6.
+- Zhu D, Delgado-Baquerizo M, Ding J, Gillings MR, and Zhu Y-G. 2021. Trophic level drives the host microbiome of soil invertebrates at a continental scale. Microbiome 9, 189. https://doi.org/10.1186/s40168-021-01144-4.
 
 ## How to use
 ### System requirements
