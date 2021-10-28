@@ -45,8 +45,12 @@ Daliang Ning
   - **midpoint root** of big trees
     - function: midpoint.root.big
 
-## Publication
+## Publications
+### Our studies
 Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, and Zhou J. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717 (2020) [doi:10.1038/s41467-020-18560-z](https://doi.org/10.1038/s41467-020-18560-z).
+Aslani F, Geisen S, Ning D, Tedersoo L, and Bahram M. 2021. Towards revealing the global diversity and community assembly of soil eukaryotes. Ecology Letters https://doi.org/10.1111/ele.13904.
+
+
 
 ## How to use
 ### System requirements
