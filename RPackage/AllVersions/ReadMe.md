@@ -1,4 +1,5 @@
 # All versions of iCAMP package
+- Version 1.5.4(20211209): correct 'paste' error in functions bNRI.bin.big and bNRI.bin.cm.
 - Version 1.5.3: add function pdist.p to calculate phylogenetic distances for relatively small datasets.
 - Version 1.5.2: add functions icamp.cm, NTI.cm, NRI.cm, bNRI.cm, bNTI.bin.cm, bNRI.bin.cm, and RC.bin.cm, to deal with samples from multiple metacommunities.
 - Version 1.5.1: add functions qpen.cm, RC.cm, bNTI.cm, and bNTI.big.cm, to deal with samples from multiple metacommunities.
