@@ -1,4 +1,7 @@
 # All versions of iCAMP package
+- Version 1.5.7(20220410): fix notes from package check. Upload to CRAN.
+- Version 1.5.6(20220410): fix error and warnings from package check.
+- Version 1.5.5(20220210): add icamp.cm2 function to allow different metacommunity settings for taxonomic and phylogenetic null models.
 - Version 1.5.4(20211209): correct 'paste' error in functions bNRI.bin.big and bNRI.bin.cm.
 - Version 1.5.3: add function pdist.p to calculate phylogenetic distances for relatively small datasets.
 - Version 1.5.2: add functions icamp.cm, NTI.cm, NRI.cm, bNRI.cm, bNTI.bin.cm, bNRI.bin.cm, and RC.bin.cm, to deal with samples from multiple metacommunities.
