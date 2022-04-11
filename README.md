@@ -47,34 +47,15 @@ Daliang Ning
   - **midpoint root** of big trees
     - function: midpoint.root.big
 
-## Publications
-### Our studies
-- Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, and Zhou J. 2020. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717. https://doi.org/10.1038/s41467-020-18560-z.
-- Aslani F, Geisen S, Ning D, Tedersoo L, and Bahram M. 2021. Towards revealing the global diversity and community assembly of soil eukaryotes. Ecology Letters https://doi.org/10.1111/ele.13904.
-- Wang A, Shi K, Ning D, Cheng H, Wang H, Liu W, Gao S, Li Z, Han J, Liang B, and Zhou J. 2021. Electrical selection for planktonic sludge microbial community function and assembly. Water Research 206, 117744. https://doi.org/10.1016/j.watres.2021.117744.
-- Ceja-Navarro JA, Wang Y, Ning D, Arellano A, Ramanculova L, Yuan MM, Byer A, Craven KD, Saha MC, Brodie EL, Pett-Ridge J, and Firestone MK. 2021. Protist diversity and community complexity in the rhizosphere of switchgrass are dynamic as plants develop. Microbiome 9, 96. https://doi.org/10.1186/s40168-021-01042-9.
-- Sun C, Zhang B, Ning D, Zhang Y, Dai T, Wu L, Li T, Liu W, Zhou J, and Wen X. 2021. Seasonal dynamics of the microbial community in two full-scale wastewater treatment plants: Diversity, composition, phylogenetic group based assembly and co-occurrence pattern. Water Research 200, 117295. https://doi.org/10.1016/j.watres.2021.117295.
-
-### Other examples
-- Dong Y, Sanford RA, Connor L, Chee-Sanford J, Wimmer BT, Iranmanesh A, Shi L, Krapac IG, Locke RA, and Shao H. 2021. Differential structure and functional gene response to geochemistry associated with the suspended and attached shallow aquifer microbiomes from the Illinois Basin, IL. Water Research 202, 117431. https://doi.org/10.1016/j.watres.2021.117431.
-- Maciá-Vicente JG and Popa F. 2021. Local endemism and ecological generalism in the assembly of root-colonizing fungi. Ecological Monographs n/a, e1489. https://doi.org/10.1002/ecm.1489.
-- Matar GK, Ali M, Bagchi S, Nunes S, Liu W-T, and Saikaly PE. 2021. Relative Importance of Stochastic Assembly Process of Membrane Biofilm Increased as Biofilm Aged. Frontiers in Microbiology 12 https://doi.org/10.3389/fmicb.2021.708531.
-- Stopnisek N and Shade A. 2021. Persistent microbiome members in the common bean rhizosphere: an integrated analysis of space, time, and plant genotype. The Isme Journal 15, 2708-2722. https://doi.org/10.1038/s41396-021-00955-5.
-- Sun Y, Zhang M, Duan C, Cao N, Jia W, Zhao Z, Ding C, Huang Y, and Wang J. 2021. Contribution of stochastic processes to the microbial community assembly on field-collected microplastics. Environmental Microbiology n/a https://doi.org/10.1111/1462-2920.15713.
-- Wang Y, Lu G, Yu H, Du X, He Q, Yao S, Zhao L, Huang C, Wen X, and Deng Y. 2021. Meadow degradation increases spatial turnover rates of the fungal community through both niche selection and dispersal limitation. Science of the Total Environment 798, 149362. https://doi.org/10.1016/j.scitotenv.2021.149362.
-- Xie J, Wang X, Xu J, Xie H, Cai Y, Liu Y, and Ding X. 2021. Strategies and Structure Feature of the Aboveground and Belowground Microbial Community Respond to Drought in Wild Rice (Oryza longistaminata). Rice 14, 79. https://doi.org/10.1186/s12284-021-00522-8.
-- Zhou R, Wang H, Wei D, Zeng S, Hou D, Weng S, He J, and Huang Z. 2021. Bacterial and eukaryotic community interactions might contribute to shrimp culture pond soil ecosystem at different culture stages. Soil Ecology Letters https://doi.org/10.1007/s42832-021-0082-6.
-- Zhu D, Delgado-Baquerizo M, Ding J, Gillings MR, and Zhu Y-G. 2021. Trophic level drives the host microbiome of soil invertebrates at a continental scale. Microbiome 9, 189. https://doi.org/10.1186/s40168-021-01144-4.
-
 ## How to use
 ### System requirements
 
 - Operating systems: Windows, or Mac, or Linux, any versions which can run R (version >= 3.2).
 
-- Dependencis: R (version >=3.2; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4, DirichletReg.
+- Dependencis: R (version >=3.5; https://www.r-project.org/), R packages:vegan,parallel,permute,ape,bigmemory,nortest,minpack.lm,Hmisc,stats4,DirichletReg,data.table.
   - R package NST is necessary to run the funciton tNST and pNST in the example, but not required for running package iCAMP.
 
-- iCAMP current version 1.2.4 has been tested on the current development version of R (4.1.0, 2020-8-18 r79041), R 4.0.2, and R 3.5.3. 
+- iCAMP current version 1.5.7 has been tested on the current development version of R (4.3.0 pre-release) and R 4.1.3. 
 
 - Any required non-standard hardware: No. However, if you are dealing with a large dataset (e.g. >20,000 taxa), a server with enough CPU threads (e.g. >=20) is preferred to finish the calculation in reasonable time.
 
@@ -90,9 +71,9 @@ Daliang Ning
   ```
   - Install from source file (version>=1.4.1):
     - Download an iCAMP version from this repository iCAMP1/RPackage/AllVersions.
-    - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, DirichletReg, data.table.
+    - Open R, install or update following packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4, DirichletReg, data.table.
     ```
-    install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc", "DirichletReg", "data.table"))
+    install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.lm", "Hmisc", "stats4", "DirichletReg", "data.table"))
     ```   
     - In R, click Packages/install package from local file, then select the file. For windows, select the .zip file. For Mac/Linux, select the .gz file. Alternatively, in Linux sytem, if you open R in a terminal, use following command to install from the .gz file (revise "/Path/to/the/folder" to the real path of the .gz file on your computer, revise "xxx" to the version number of iCAMP):
     ```
@@ -112,4 +93,34 @@ Daliang Ning
 
 - Run the codes and check the output files in the output folder you've specified. You may check the ReadMe.md in /Examples/SimpleOTU for the meaning of each output file, as well as the help documents in the R package for details.
 
+## Publications
+### Our studies
+- Ning D, Yuan M, Wu L, Zhang Y, Guo X, Zhou X, Yang Y, Arkin AP, Firestone MK, and Zhou J. 2020. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717. https://doi.org/10.1038/s41467-020-18560-z.
+- Aslani F, Geisen S, Ning D, Tedersoo L, and Bahram M. 2021. Towards revealing the global diversity and community assembly of soil eukaryotes. Ecology Letters https://doi.org/10.1111/ele.13904.
+- Wang A, Shi K, Ning D, Cheng H, Wang H, Liu W, Gao S, Li Z, Han J, Liang B, and Zhou J. 2021. Electrical selection for planktonic sludge microbial community function and assembly. Water Research 206, 117744. https://doi.org/10.1016/j.watres.2021.117744.
+- Ceja-Navarro JA, Wang Y, Ning D, Arellano A, Ramanculova L, Yuan MM, Byer A, Craven KD, Saha MC, Brodie EL, Pett-Ridge J, and Firestone MK. 2021. Protist diversity and community complexity in the rhizosphere of switchgrass are dynamic as plants develop. Microbiome 9, 96. https://doi.org/10.1186/s40168-021-01042-9.
+- Sun C, Zhang B, Ning D, Zhang Y, Dai T, Wu L, Li T, Liu W, Zhou J, and Wen X. 2021. Seasonal dynamics of the microbial community in two full-scale wastewater treatment plants: Diversity, composition, phylogenetic group based assembly and co-occurrence pattern. Water Research 200, 117295. https://doi.org/10.1016/j.watres.2021.117295.
+
+### Other examples
+#### 2022
+- Wang Y, Li S, Lang X, Huang X, and Su J. 2022. Effects of microtopography on soil fungal community diversity, composition, and assembly in a subtropical monsoon evergreen broadleaf forest of Southwest China. CATENA 211, 106025. https://doi.org/10.1016/j.catena.2022.106025.
+- Song T, Liang Q, Du Z, Wang X, Chen G, Du Z, and Mu D. 2022. Salinity Gradient Controls Microbial Community Structure and Assembly in Coastal Solar Salterns. Genes 13, 385. https://doi.org/10.3390/genes13020385.
+- Lv B, Shi J, Li T, Ren L, Tian W, Lu X, Han Y, Cui Y, and Jiang T. 2022. Deciphering the characterization, ecological function and assembly processes of bacterial communities in ship ballast water and sediments. Science of the Total Environment 816, 152721. https://doi.org/10.1016/j.scitotenv.2021.152721.
+- Ju Z, Du X, Feng K, Li S, Gu S, Jin D, and Deng Y. 2021. The Succession of Bacterial Community Attached on Biodegradable Plastic Mulches During the Degradation in Soil. Frontiers in Microbiology 12 https://doi.org/10.3389/fmicb.2021.785737.
+-	Chen S, Tao J, Chen Y, Wang W, Fan L, and Zhang C. 2022. Interactions Between Marine Group II Archaea and Phytoplankton Revealed by Population Correlations in the Northern Coast of South China Sea. Frontiers in Microbiology 12 https://doi.org/10.3389/fmicb.2021.785532.
+-	Zhang S, Li K, Hu J, Wang F, Chen D, Zhang Z, Li T, Li L, Tao J, Liu D, and Che R. 2022. Distinct assembly mechanisms of microbial sub-communities with different rarity along the Nu River. Journal of Soils and Sediments https://doi.org/10.1007/s11368-022-03149-4.
+#### 2021
+- Stopnisek N and Shade A. 2021. Persistent microbiome members in the common bean rhizosphere: an integrated analysis of space, time, and plant genotype. The Isme Journal 15, 2708-2722. https://doi.org/10.1038/s41396-021-00955-5.
+- Dong Y, Sanford RA, Connor L, Chee-Sanford J, Wimmer BT, Iranmanesh A, Shi L, Krapac IG, Locke RA, and Shao H. 2021. Differential structure and functional gene response to geochemistry associated with the suspended and attached shallow aquifer microbiomes from the Illinois Basin, IL. Water Research 202, 117431. https://doi.org/10.1016/j.watres.2021.117431.
+- Zhu D, Delgado-Baquerizo M, Ding J, Gillings MR, and Zhu Y-G. 2021. Trophic level drives the host microbiome of soil invertebrates at a continental scale. Microbiome 9, 189. https://doi.org/10.1186/s40168-021-01144-4.
+- Sun Y, Zhang M, Duan C, Cao N, Jia W, Zhao Z, Ding C, Huang Y, and Wang J. 2021. Contribution of stochastic processes to the microbial community assembly on field-collected microplastics. Environmental Microbiology 23, 6707-6720. https://doi.org/10.1111/1462-2920.15713.
+- Macia-Vicente JG and Popa F. 2022. Local endemism and ecological generalism in the assembly of root-colonizing fungi. Ecological Monographs 92, e1489. https://doi.org/10.1002/ecm.1489.
+- Yi M, Fang Y, Hu G, Liu S, Ni J, and Liu T. 2021. Distinct community assembly processes underlie significant spatiotemporal dynamics of abundant and rare bacterioplankton in the Yangtze River. Frontiers of Environmental Science & Engineering 16, 79. https://doi.org/10.1007/s11783-021-1513-4.
+- Zheng L, Wang X, Ding A, Yuan D, Tan Q, Xing Y, and Xie E. 2021. Ecological Insights Into Community Interactions, Assembly Processes and Function in the Denitrifying Phosphorus Removal Activated Sludge Driven by Phosphorus Sources. Frontiers in Microbiology 12 https://doi.org/10.3389/fmicb.2021.779369.
+- Matar GK, Ali M, Bagchi S, Nunes S, Liu W-T, and Saikaly PE. 2021. Relative Importance of Stochastic Assembly Process of Membrane Biofilm Increased as Biofilm Aged. Frontiers in Microbiology 12 https://doi.org/10.3389/fmicb.2021.708531.
+- Yuan H, Li T, Li H, Wang C, Li L, Lin X, and Lin S. 2021. Diversity Distribution, Driving Factors and Assembly Mechanisms of Free-Living and Particle-Associated Bacterial Communities at a Subtropical Marginal Sea. Microorganisms 9, 2445. https://doi.org/10.3390/microorganisms9122445.
+- Wang Y, Lu G, Yu H, Du X, He Q, Yao S, Zhao L, Huang C, Wen X, and Deng Y. 2021. Meadow degradation increases spatial turnover rates of the fungal community through both niche selection and dispersal limitation. Science of the Total Environment 798, 149362. https://doi.org/10.1016/j.scitotenv.2021.149362.
+- Xie J, Wang X, Xu J, Xie H, Cai Y, Liu Y, and Ding X. 2021. Strategies and Structure Feature of the Aboveground and Belowground Microbial Community Respond to Drought in Wild Rice (Oryza longistaminata). Rice 14, 79. https://doi.org/10.1186/s12284-021-00522-8.
+- Zhou R, Wang H, Wei D, Zeng S, Hou D, Weng S, He J, and Huang Z. 2021. Bacterial and eukaryotic community interactions might contribute to shrimp culture pond soil ecosystem at different culture stages. Soil Ecology Letters https://doi.org/10.1007/s42832-021-0082-6.
+ 
 ## End
