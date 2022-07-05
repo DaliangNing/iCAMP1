@@ -1,4 +1,8 @@
 # All versions of iCAMP package
+- Version 1.5.12(20220529): fix warnings due to working directory issues of some examples in help documents.
+- Version 1.5.11(20220426): fix error in special cases in fucntion bNTI.bin.cm.
+- Version 1.5.10(20220425): correct parallel thread number in examples.
+- Version 1.5.9(20220421): fix error in function bNTI.bin.cm.
 - Version 1.5.8(20220421): fix error when nworker=1 in several functions.
 - Version 1.5.7(20220410): fix notes from package check. Upload to CRAN.
 - Version 1.5.6(20220410): fix error and warnings from package check.
