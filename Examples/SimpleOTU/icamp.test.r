@@ -346,8 +346,8 @@ write.csv(tnstout$index.pair.grp,file = paste0(prefix,".tNST.pairwise.",colnames
 # 14.1b # bootstrapping test for tNST
 tnst.bt=NST::nst.boot(nst.result=tnstout, group=treat.use,
                       rand=rand.time, nworker=nworker)
-write.csv(tnst.bt$NST.summary,file = paste0(prefix,".tNST.bootstr.",colnames(treat)[i],".csv"))
-write.csv(tnst.bt$NST.compare,file = paste0(prefix,".tNST.compare.",colnames(treat)[i],".csv"))
+write.csv(tnst.bt$summary,file = paste0(prefix,".tNST.bootstr.",colnames(treat)[i],".csv"))
+write.csv(tnst.bt$compare,file = paste0(prefix,".tNST.compare.",colnames(treat)[i],".csv"))
 
 # 14.2a # pNST
 pnstout=NST::pNST(comm=comm, pd.desc=pd.big$pd.file, pd.wd=pd.big$pd.wd, 
@@ -359,8 +359,8 @@ write.csv(pnstout$index.pair.grp,file = paste0(prefix,".pNST.pairwise.",colnames
 
 pnst.bt=NST::nst.boot(nst.result=pnstout, group=treat.use,
                       rand=rand.time, nworker=nworker)
-write.csv(pnst.bt$NST.summary,file = paste0(prefix,".pNST.bootstr.",colnames(treat)[i],".csv"))
-write.csv(pnst.bt$NST.compare,file = paste0(prefix,".pNST.compare.",colnames(treat)[i],".csv"))
+write.csv(pnst.bt$summary,file = paste0(prefix,".pNST.bootstr.",colnames(treat)[i],".csv"))
+write.csv(pnst.bt$compare,file = paste0(prefix,".pNST.compare.",colnames(treat)[i],".csv"))
 
 # 15 # summarize core, rare, and other taxa
 # 15.1 # define the types of different taxa in category.txt
