@@ -5,6 +5,7 @@ Daliang Ning
 - Downloaded **9796** times from 2020.9.9 to 2021.4.9.
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
+- 2022.6.1 iCAMP v1.5.12 is published on CRAN.
 - 2022.4.10 iCAMP v1.5.7 is uploaded to CRAN.
 - 2021.10.28 Studies using iCAMP are published on Ecology Letters (https://doi.org/10.1111/ele.13904) and Water Research (https://doi.org/10.1016/j.watres.2021.117744; https://doi.org/10.1016/j.watres.2021.117295)
 - 2021.4.18 iCAMP v1.4.3 updated on [github](https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions), to allow relative abundances in community matrix and community data transformation.
@@ -55,7 +56,7 @@ Daliang Ning
 - Dependencis: R (version >=3.5; https://www.r-project.org/), R packages:vegan,parallel,permute,ape,bigmemory,nortest,minpack.lm,Hmisc,stats4,DirichletReg,data.table.
   - R package NST is necessary to run the funciton tNST and pNST in the example, but not required for running package iCAMP.
 
-- iCAMP current version 1.5.7 has been tested on the current development version of R (4.3.0 pre-release) and R 4.1.3. 
+- iCAMP current version 1.5.12 has been tested on the current development version of R (4.3.0 pre-release) and R 4.2.1. 
 
 - Any required non-standard hardware: No. However, if you are dealing with a large dataset (e.g. >20,000 taxa), a server with enough CPU threads (e.g. >=20) is preferred to finish the calculation in reasonable time.
 
@@ -65,7 +66,7 @@ Daliang Ning
 
 - Install iCAMP.
 
-  - Install published iCAMP (version<=1.3.4): Open R, use function "install.packages" as below.
+  - Install published iCAMP (version<=1.5.12): Open R, use function "install.packages" as below.
   ```
   install.packages("iCAMP")
   ```
