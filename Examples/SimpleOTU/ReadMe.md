@@ -1,5 +1,5 @@
 # iCAMP analysis example: SimpleOTU
-Daliang Ning. 2021.1.7
+Daliang Ning. 2023.7.4
 
 ## 1. System requirements
 
@@ -7,7 +7,7 @@ Daliang Ning. 2021.1.7
 
 1.2- Dependencis: R (version >=3.5; https://www.r-project.org/), R packages: vegan, parallel, permute, ape, bigmemory, nortest, minpack.lm, Hmisc, stats4. R package NST is necessary to run the funciton tNST and pNST in the demo, but not required for running package iCAMP.
 
-1.3- iCAMP current version 1.4.7.
+1.3- iCAMP current version 1.6.2.
 
 1.4- Any required non-standard hardware: No. However, if you are dealing with a large dataset (e.g. >20,000 taxa), a server with enough CPU threads (e.g. >=20) is preferred to finish the calculation in reasonable time.
 
@@ -17,7 +17,7 @@ Daliang Ning. 2021.1.7
 
 2.2- Install iCAMP.
 
-- iCAMP versions <=1.3.4 are available from CRAN, which can be installed directly in R with following code.
+- iCAMP versions <=1.5.12 are available from CRAN, which can be installed directly in R with the following code.
 ```
 install.packages("iCAMP")
 ```
@@ -73,53 +73,55 @@ install.packages(c("vegan", "permute", "ape", "bigmemory", "nortest", "minpack.l
 
 (16)Test.MetaCrct.iCAMP.Confidence.detail.rda: the object "icres.meta" saved in R data format. It is a list object, where the meaning of each element is the same as in the file "Test.iCAMP.Confidence.detail.rda". It is calculated by specifying the relative abundance of each taxon in the regional pool, instead of using the average relative abundance from the community matrix as regional relative abundance.
 
-(17) Test.iCAMP.Summary.rda: the object "icbin" saved in R data format. see help document of the function icamp.bins for description of each element in the object.
+(17) Test.MetaGrp.iCAMP.Confidence.detail.rda: the object "icres.meta2" saved in R data format. It is a list object, where the meaning of each element is the same as in the file "Test.iCAMP.Confidence.detail.rda". It is calculated by specifying different regional pools of different samples, instead of assuming all samples are from the same regional pool.
 
-(18) Test.ProcessImportance_EachGroup.csv: Relative importance of each process in governing the turnovers in a group of samples.
+(18) Test.iCAMP.Summary.rda: the object "icbin" saved in R data format. see help document of the function icamp.bins for description of each element in the object.
 
-(19) Test.ProcessImportance_EachBin_EachGroup.csv: Relative importance of each process in governing the turnovers of each bin among a group of samples.
+(19) Test.ProcessImportance_EachGroup.csv: Relative importance of each process in governing the turnovers in a group of samples.
 
-(20) Test.ProcessImportance_EachTurnover.csv: Relative importance of each process in governing the turnovers between each pair of communities (samples).
+(20) Test.ProcessImportance_EachBin_EachGroup.csv: Relative importance of each process in governing the turnovers of each bin among a group of samples.
 
-(21) Test.BinContributeToProcess_EachGroup.csv: Bin contribution to each process, measuring the contribution of each bin to the relative importance of each process in the assembly of a group of communities.
+(21) Test.ProcessImportance_EachTurnover.csv: Relative importance of each process in governing the turnovers between each pair of communities (samples).
 
-(22) Test.iCAMP.Boot.Management.rda: the object "icboot" saved in R data format. see help document of the function icamp.boot for description of each element in the object.
+(22) Test.BinContributeToProcess_EachGroup.csv: Bin contribution to each process, measuring the contribution of each bin to the relative importance of each process in the assembly of a group of communities.
 
-(23) Test.iCAMP.BootSummary.Management.csv: a table to summarize bootstrapping results. see help document of the function icamp.boot for description of the output element "summary".
+(23) Test.iCAMP.Boot.Management.rda: the object "icboot" saved in R data format. see help document of the function icamp.boot for description of each element in the object.
 
-(24) Test.iCAMP.Compare.Management.csv: a table to summarize comparison index, effect size, and significance between each two groups. see help document of the function icamp.boot for description of the output element "compare".
+(24) Test.iCAMP.BootSummary.Management.csv: a table to summarize bootstrapping results. see help document of the function icamp.boot for description of the output element "summary".
 
-(25) Test.QPEN.detail.csv: a table to show betaMNTD, Bray-Curtis dissimilarity, betaNTI, RC, and governing assembly process for each turnover between communities, calculated by QPEN (quantifying community assembly processes based on entire-community null model analysis). Please find details in the help document of function 'qpen' in package 'iCAMP'.
+(25) Test.iCAMP.Compare.Management.csv: a table to summarize comparison index, effect size, and significance between each two groups. see help document of the function icamp.boot for description of the output element "compare".
 
-(26) Test.NeutralModel.Stats.csv: Neutral taxa percentage results, showing estimated dispersal rate and model fitting statistics. Please find details in the help document of function 'snm' in package 'iCAMP'.
+(26) Test.QPEN.detail.csv: a table to show betaMNTD, Bray-Curtis dissimilarity, betaNTI, RC, and governing assembly process for each turnover between communities, calculated by QPEN (quantifying community assembly processes based on entire-community null model analysis). Please find details in the help document of function 'qpen' in package 'iCAMP'.
 
-(27) Test.NeutralModel.TypeRatio.csv: Neutral taxa percentage results, showing unweighted and abundance-weighted percentage of taxa within, above, and below the confidence interval of occurrence frequencies estimated by neutral theory model. Please find details in the help document of function 'snm' in package 'iCAMP'.
+(27) Test.NeutralModel.Stats.csv: Neutral taxa percentage results, showing estimated dispersal rate and model fitting statistics. Please find details in the help document of function 'snm' in package 'iCAMP'.
 
-(28) Test.tNST.summary.Management.csv: taxonomic normalized stochasticity ratio (tNST) results, showing the estimated tNST in each group (treatment). Please find details in the help document of function 'tNST' in package 'NST'.
+(28) Test.NeutralModel.TypeRatio.csv: Neutral taxa percentage results, showing unweighted and abundance-weighted percentage of taxa within, above, and below the confidence interval of occurrence frequencies estimated by neutral theory model. Please find details in the help document of function 'snm' in package 'iCAMP'.
 
-(29) Test.tNST.pairwise.Management.csv: tNST results, showing standardized similarity, null expectation of the similarity, stochasticity ratio, normalized stochasticity ratio, and modeified normalized stochasticity ratio for each pairwise comparison between communities. Please find details in the help document of function 'tNST' in package 'NST'.
+(29) Test.tNST.summary.Management.csv: taxonomic normalized stochasticity ratio (tNST) results, showing the estimated tNST in each group (treatment). Please find details in the help document of function 'tNST' in package 'NST'.
 
-(30) Test.tNST.bootstr.Management.csv: tNST bootstrapping test results, showing the variation (mean, standard deviation, quartiles, outliers, etc.) of tNST in each group (treatment). Please find details in the help document of function 'nst.boot' in package 'NST'.
+(30) Test.tNST.pairwise.Management.csv: tNST results, showing standardized similarity, null expectation of the similarity, stochasticity ratio, normalized stochasticity ratio, and modeified normalized stochasticity ratio for each pairwise comparison between communities. Please find details in the help document of function 'tNST' in package 'NST'.
 
-(31) Test.tNST.compare.Management.csv: tNST bootstrapping test results, showing the significance of tNST difference between groups (treatments). Please find details in the help document of function 'nst.boot' in package 'NST'.
+(31) Test.tNST.bootstr.Management.csv: tNST bootstrapping test results, showing the variation (mean, standard deviation, quartiles, outliers, etc.) of tNST in each group (treatment). Please find details in the help document of function 'nst.boot' in package 'NST'.
 
-(32-35) Test.pNST.summary.Management.csv, Test.pNST.pairwise.Management.csv, Test.pNST.bootstr.Management.csv, and Test.pNST.compare.Management.csv: phylogenetic normalized stochasticity ratio (pNST) results, the same as those for tNST. Please find details in the help document of function 'pNST' and 'nst.boot' in package 'NST'.
+(32) Test.tNST.compare.Management.csv: tNST bootstrapping test results, showing the significance of tNST difference between groups (treatments). Please find details in the help document of function 'nst.boot' in package 'NST'.
 
-(36) Test.Taxon_Bin.csv: iCAMP output, a matrix showing the bin ID and classification information for each taxon.
+(33-36) Test.pNST.summary.Management.csv, Test.pNST.pairwise.Management.csv, Test.pNST.bootstr.Management.csv, and Test.pNST.compare.Management.csv: phylogenetic normalized stochasticity ratio (pNST) results, the same as those for tNST. Please find details in the help document of function 'pNST' and 'nst.boot' in package 'NST'.
 
-(37) Test.Bin_TopTaxon.csv: iCAMP output, a matrix showing the bin relative abundance; the top taxon ID, percentage in bin, and classification; the most abundant name at each phylogeny level in the bin.
+(37) Test.Taxon_Bin.csv: iCAMP output, a matrix showing the bin ID and classification information for each taxon.
 
-(38) Test.iCAMP.Process_EachTurnover_EachCategory.csv: iCAMP output, a matrix showing the relative importance of each process in shaping the turnover of each category between each pair of samples. The category is defined in the input file category.txt.
+(38) Test.Bin_TopTaxon.csv: iCAMP output, a matrix showing the bin relative abundance; the top taxon ID, percentage in bin, and classification; the most abundant name at each phylogeny level in the bin.
 
-(39) Test.iCAMP.Process_EachGroup_EachCategory.csv: iCAMP output, a matrix showing the relative importance of each process in shaping the turnovers of each category among each group of samples.
+(39) Test.iCAMP.Process_EachTurnover_EachCategory.csv: iCAMP output, a matrix showing the relative importance of each process in shaping the turnover of each category between each pair of samples. The category is defined in the input file category.txt.
 
-(40) Test.OmitBinInform.csv: information of OTUs in omitted bins.
+(40) Test.iCAMP.Process_EachGroup_EachCategory.csv: iCAMP output, a matrix showing the relative importance of each process in shaping the turnovers of each category among each group of samples.
 
-(41) TestRA.iCAMP.Confidence.detail.rda: the object "icres6" saved in R data format. it is a list object, where the meaning of each element is the same as in the file "Test.iCAMP.Confidence.detail.rda". The input community marix indicates realtive abundance (values < 1) rather than counts. 
+(41) Test.OmitBinInform.csv: information of OTUs in omitted bins.
 
-(42) TestHel.iCAMP.Confidence.detail.rda: the object "icres7" saved in R data format. it is a list object, where the meaning of each element is the same as in the file "Test.iCAMP.Confidence.detail.rda". The input community marix is transformed with 'hellinger' method and the taxonomic dissimilarity index is 'euclidean' rather than the default 'Bray-Curtis'. 
+(42) TestRA.iCAMP.Confidence.detail.rda: the object "icres6" saved in R data format. it is a list object, where the meaning of each element is the same as in the file "Test.iCAMP.Confidence.detail.rda". The input community marix indicates realtive abundance (values < 1) rather than counts. 
 
-(43-46)  Test.QPEN.bootstrap.rda, Test.QPEN.Index.Obs.Summary.csv, Test.QPEN.Comparison.Summary.csv, and Test.QPEN.Bootstrapping.Summary.csv: the bootstrapping test of QPEN. Index.Obs.Summary includes the observed values of each index in each group. Bootstrapping.Summary includes the statistics of each index and each process based on the bootstrapping analysis. Comparison.Summary shows the effect size and significance of the difference between groups.
+(43) TestHel.iCAMP.Confidence.detail.rda: the object "icres7" saved in R data format. it is a list object, where the meaning of each element is the same as in the file "Test.iCAMP.Confidence.detail.rda". The input community marix is transformed with 'hellinger' method and the taxonomic dissimilarity index is 'euclidean' rather than the default 'Bray-Curtis'. 
+
+(44-47)  Test.QPEN.bootstrap.rda, Test.QPEN.Index.Obs.Summary.csv, Test.QPEN.Comparison.Summary.csv, and Test.QPEN.Bootstrapping.Summary.csv: the bootstrapping test of QPEN. Index.Obs.Summary includes the observed values of each index in each group. Bootstrapping.Summary includes the statistics of each index and each process based on the bootstrapping analysis. Comparison.Summary shows the effect size and significance of the difference between groups.
 
 3.3- Expected run time: for the example, 6 to 12 min in a normal desktop computer.
 
