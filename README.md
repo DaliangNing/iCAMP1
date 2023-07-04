@@ -1,5 +1,5 @@
 # iCAMP
-Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis ([Latest version 1.6.1](https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions))
+Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis ([Latest version 1.6.2](https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions))
 
 Daliang Ning
 - Downloaded **18251** times from 2020.9.9 to 2023.7.3.
