@@ -2,13 +2,14 @@
 # version 2020.9.21, add classification information
 # version 2021.1.7, add (step 15) icamp.cate to summarize for different categories of taxa, e.g. core versus rare taxa.
 # version 2021.4.17, add step 9.5 and 9.6.
+# version 2023.7.4, add step 9.3.2
 
 rm(list=ls())
 t0=Sys.time() # to calculate time cost
 
 # 1 # set folder paths and file names, please change according to the folder paths and file names in your computer.
 # the folder saving the input files
-wd="E:/Dropbox/ToolDevelop/package/iCAMP/LatestVersion/Example"
+wd="C:/Users/Daliang/Dropbox/ToolDevelop/package/iCAMP/LatestVersion/Example"
 
 # the OTU table file (Tab delimited txt file)
 com.file="otus.txt"
@@ -27,7 +28,7 @@ env.file="environment.txt"
 # if you do not have env file or the env may not represent niche, skip step 7 and 8, but check the alternative way to determine binning setting, e.g. bin.size.limit.
 
 # the folder to save the output. please change to a new folder even if you are just testing the example data.
-save.wd="E:/Dropbox/ToolDevelop/package/iCAMP/LatestVersion/Example/TestOutputs28"
+save.wd="C:/Users/Daliang/Dropbox/ToolDevelop/package/iCAMP/LatestVersion/Example/TestOutputs29"
 if(!dir.exists(save.wd)){dir.create(save.wd)}
 
 # 2 # key parameter setting
@@ -196,7 +197,8 @@ head(icres4$RCbMPDiRCbraya)
 icres5=iCAMP::change.sigindex(icamp.output = icres2, sig.index = "SES.RC", detail.save = TRUE, detail.null = FALSE, ses.cut = 1.64, rc.cut = 0.9)
 head(icres5$bNRIiRCbraya)
 
-# 9.3 # you may specify the relative abundance of each species in the regional pool, if it is not the same as the average relative abundance from the "comm" you input.
+# 9.3 # Special settings for regional pool(s) (the metacommunity)
+# 9.3.1 # you may specify the relative abundance of each species in the regional pool, if it is not the same as the average relative abundance from the "comm" you input.
 meta.ab=rep(1,ncol(comm)) # here i assume all the species actuall have the same relative abundance in the regional pool.
 prefix2=paste0(prefix,".MetaCrct")
 sig.index="Confidence" # see other options in help document of icamp.big.
@@ -209,6 +211,24 @@ icres.meta=iCAMP::icamp.big(comm=comm, pd.desc = pd.big$pd.file, pd.spname=pd.bi
                        qp.save = FALSE, detail.null = FALSE, ignore.zero = TRUE, output.wd = save.wd, 
                        correct.special = TRUE, unit.sum = rowSums(comm), special.method = "depend",
                        ses.cut = 1.96, rc.cut = 0.95, conf.cut=0.975, omit.option = "no",meta.ab=meta.ab)
+
+# 9.3.2 # if samples are from different regional pools (metacommunities)
+# e.g., in this example, samples in 'south' are from one regional pool and those in 'north' are from another regional pool
+meta.group=treat[,2,drop=FALSE]
+prefix3=paste0(prefix,".MetaGrp")
+sig.index="Confidence"
+icres.meta2=iCAMP::icamp.cm(comm=comm,tree=tree,meta.group=meta.group,
+                            pd.desc=pd.big$pd.file, pd.spname=pd.big$tip.label, pd.wd=pd.big$pd.wd,
+                            rand=rand.time,prefix=prefix3,ds=0.2,pd.cut=NA,
+                            phylo.rand.scale="within.bin",taxa.rand.scale="across.all",
+                            phylo.metric="bMPD",sig.index=sig.index,
+                            bin.size.limit=bin.size.limit,nworker=nworker,memory.G=memory.G,
+                            rtree.save=FALSE,detail.save=TRUE,qp.save=FALSE,detail.null=FALSE,
+                            ignore.zero=TRUE,output.wd=save.wd,
+                            correct.special=TRUE,unit.sum=rowSums(comm),
+                            special.method="depend", ses.cut = 1.96,rc.cut = 0.95,conf.cut=0.975,
+                            omit.option="no")
+
 
 # 9.4 # consider to omit small bins
 # 9.4.1 # if you would like to omit small bins rather than merging them to nearest relatives, set omit.option as "test" to check what will be omitted.
@@ -346,8 +366,8 @@ write.csv(tnstout$index.pair.grp,file = paste0(prefix,".tNST.pairwise.",colnames
 # 14.1b # bootstrapping test for tNST
 tnst.bt=NST::nst.boot(nst.result=tnstout, group=treat.use,
                       rand=rand.time, nworker=nworker)
-write.csv(tnst.bt$summary,file = paste0(prefix,".tNST.bootstr.",colnames(treat)[i],".csv"))
-write.csv(tnst.bt$compare,file = paste0(prefix,".tNST.compare.",colnames(treat)[i],".csv"))
+write.csv(tnst.bt$NST.summary,file = paste0(prefix,".tNST.bootstr.",colnames(treat)[i],".csv"))
+write.csv(tnst.bt$NST.compare,file = paste0(prefix,".tNST.compare.",colnames(treat)[i],".csv"))
 
 # 14.2a # pNST
 pnstout=NST::pNST(comm=comm, pd.desc=pd.big$pd.file, pd.wd=pd.big$pd.wd, 
@@ -359,8 +379,8 @@ write.csv(pnstout$index.pair.grp,file = paste0(prefix,".pNST.pairwise.",colnames
 
 pnst.bt=NST::nst.boot(nst.result=pnstout, group=treat.use,
                       rand=rand.time, nworker=nworker)
-write.csv(pnst.bt$summary,file = paste0(prefix,".pNST.bootstr.",colnames(treat)[i],".csv"))
-write.csv(pnst.bt$compare,file = paste0(prefix,".pNST.compare.",colnames(treat)[i],".csv"))
+write.csv(pnst.bt$NST.summary,file = paste0(prefix,".pNST.bootstr.",colnames(treat)[i],".csv"))
+write.csv(pnst.bt$NST.compare,file = paste0(prefix,".pNST.compare.",colnames(treat)[i],".csv"))
 
 # 15 # summarize core, rare, and other taxa
 # 15.1 # define the types of different taxa in category.txt
