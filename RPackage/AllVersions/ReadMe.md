@@ -1,4 +1,5 @@
 # All versions of iCAMP package
+- Version 1.6.2(20230704): fix error when setting dirichlet=TRUE in functions related to RC index.
 - Version 1.6.1(20230427): add function big.mantel.correlog for Mantel Correlogram and stepwise Mantel test of big data.
 - Version 1.5.12(20220529): fix warnings due to working directory issues of some examples in help documents.
 - Version 1.5.11(20220426): fix error in special cases in fucntion bNTI.bin.cm.
