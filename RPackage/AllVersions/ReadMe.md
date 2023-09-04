@@ -1,4 +1,5 @@
 # All versions of iCAMP package
+- Version 1.6.4(20230904): add temp.saved.file and temp.save to icamp.big, icamp.cm, and icamp.cm2, to load or save intermediate results, so users can resume from unexpected break.
 - Version 1.6.3(20230904): add bmpd.big, mntd.big, mpd.big, NRI.cm.big, NTI.cm.big, and bNRI.big.cm, to calculate corresponding indexes for big data.
 - Version 1.6.2(20230704): fix error when setting dirichlet=TRUE in functions related to RC index.
 - Version 1.6.1(20230427): add function big.mantel.correlog for Mantel Correlogram and stepwise Mantel test of big data.
