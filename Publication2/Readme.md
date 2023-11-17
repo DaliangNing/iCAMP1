@@ -1,4 +1,4 @@
-# Code and data in Manuscript
+# Code and data in manuscript
 Daliang Ning
 2023.11.17
 
