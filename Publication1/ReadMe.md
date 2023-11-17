@@ -5,4 +5,4 @@ Daliang Ning
 This folder is to archive code and data for the first publication about iCAMP.
 
 ## Paper
-Ning, D., Yuan, M., Wu, L., Zhang, Y., Guo, X., Zhou, X. et al. (2020). A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. bioRxiv. doi:10.1101/2020.02.22.960872 (Nature Communications, under revision).
+Ning, D., Yuan, M., Wu, L. et al. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nat Commun 11, 4717 (2020). [https://doi.org/10.1038/s41467-020-18560-z](https://doi.org/10.1038/s41467-020-18560-z).
