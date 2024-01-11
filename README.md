@@ -5,8 +5,8 @@ Daliang Ning
 
 - Downloaded **22,467** times from 2020.9.9 to 2024.1.9.
 - Key publications:
-  - Ning, D., Yuan, M., Wu, L. et al. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717 (2020). [https://doi.org/10.1038/s41467-020-18560-z](https://doi.org/10.1038/s41467-020-18560-z) iCAMP was developed in this study
-  - Ning D, Wang Y, Fan Y, et al. Environmental stress mediates groundwater microbial community assembly. Nature Microbiology (2024). [https://doi.org/10.1038/s41564-023-01573-x](https://doi.org/10.1038/s41564-023-01573-x) Genearl framework about stress-assembly relationship was proposed in this study
+  - Ning, D., Yuan, M., Wu, L. et al. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717 (2020). [https://doi.org/10.1038/s41467-020-18560-z](https://doi.org/10.1038/s41467-020-18560-z) iCAMP was developed in this study ([Data&Code](https://github.com/DaliangNing/iCAMP1/tree/master/Publication1))
+  - Ning D, Wang Y, Fan Y, et al. Environmental stress mediates groundwater microbial community assembly. Nature Microbiology (2024). [https://doi.org/10.1038/s41564-023-01573-x](https://doi.org/10.1038/s41564-023-01573-x) Genearl framework about stress-assembly relationship was proposed in this study ([Data&Code](https://github.com/DaliangNing/iCAMP1/tree/master/Publication2))
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
 - 2024.1.11 Our paper about stress-assembly relationship is published on Nature Microbiology today. [https://doi.org/10.1038/s41564-023-01573-x](https://doi.org/10.1038/s41564-023-01573-x)
