@@ -4,9 +4,12 @@ Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysi
 Daliang Ning
 
 - Downloaded **18251** times from 2020.9.9 to 2023.7.3.
-- Cite: Ning, D., Yuan, M., Wu, L. et al. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717 (2020). [https://doi.org/10.1038/s41467-020-18560-z](https://doi.org/10.1038/s41467-020-18560-z)
+- Key publications:
+-- Ning, D., Yuan, M., Wu, L. et al. A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming. Nature Communications 11, 4717 (2020). [https://doi.org/10.1038/s41467-020-18560-z](https://doi.org/10.1038/s41467-020-18560-z) iCAMP was developed in this study
+-- Ning D, Wang Y, Fan Y, et al. Environmental stress mediates groundwater microbial community assembly. Nature Microbiology (2024). [https://doi.org/10.1038/s41564-023-01573-x](https://doi.org/10.1038/s41564-023-01573-x) Genearl framework about stress-assembly relationship was proposed in this study
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
+- 2024.1.11 Our paper about stress-assembly relationship is published on Nature Microbiology today. [https://doi.org/10.1038/s41564-023-01573-x](https://doi.org/10.1038/s41564-023-01573-x)
 - 2023.9.4 iCAMP v1.6.4 is uploaded. More functions for big data; added options for main function to save intermediate results for resuming after unexpected break.
 - 2022.6.1 iCAMP v1.5.12 is published on CRAN.
 - 2022.4.10 iCAMP v1.5.7 is uploaded to CRAN.
