@@ -4,6 +4,7 @@ This folder archives all versions of iCAMP package.
 - Published: all versions submitted/published on CRAN (https://cran.r-project.org/).
 - AllVersions: all versions of iCAMP package including the latest one.
 ## History
+- **2024-11-26** upload version 1.6.6
 - **2023-12-23** upload version 1.6.5
 - **2023-7-4** upload version 1.6.2
 - **2023-4-27** upload version 1.6.1
