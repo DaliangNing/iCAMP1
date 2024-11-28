@@ -1,4 +1,5 @@
 # All versions of iCAMP package
+- Version 1.6.7(20241128): revise change.sigindex to allow input has different randomization times in different bins.
 - Version 1.6.6(20241126): revise icamp.boot to rank treatments according to the order of levels.
 - Version 1.6.5(20231223): fix a bug when input comm is data.frame in the functions bNRI.cm, bNRI.big.cm, bNRI.bin.cm, bNTI.cm, bNTI.big.cm, bNTI.bin.cm, NRI.cm, NRI.cm.big, NTI.com, and NTI.cm.big.
 - Version 1.6.4(20230904): add temp.saved.file and temp.save to icamp.big, icamp.cm, and icamp.cm2, to load or save intermediate results, so users can resume from unexpected break.
