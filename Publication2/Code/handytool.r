@@ -352,4 +352,45 @@ match.name<-function(name.check=integer(0),rn.list=list(integer(0)),cn.list=list
   }
   output
 }
+#####################################
+# 5 # Transform 3-column matrix to distance matrix
+#####################################
+col3.dist<-function(m.3col,to.dist=TRUE)
+{
+  # convert 3-col matrix to distance object
+  m.3col=as.matrix(m.3col)
+
+  name.factor=as.factor(c(m.3col[,1],m.3col[,2]))
+  name.lev=levels(name.factor)
+  num=length(name.lev)
+  
+  if(sum(m.3col[,1]==m.3col[,2])>0)
+  {
+    if(to.dist){warning("In some samples, distance within sample is not zero. it is better to return Matrix instead of dist.")}
+    idd=which(m.3col[,1]==m.3col[,2])
+    m.diag=m.3col[idd,,drop=FALSE]
+    m.3col=m.3col[-idd,,drop=FALSE]
+  }else{idd=NA}
+  
+  if(nrow(m.3col)>(0.5*num*(num-1)))
+  {
+    warning("The row number is more than all possible pairwise comparisons, some duplicate(s) were ignored.")
+  }else if(nrow(m.3col)<(0.5*num*(num-1)))
+  {
+    warning("The row number is less than all possible pairwise comparisons, NA was returned.")
+  }
+  res=matrix(NA,nrow=length(name.lev),ncol=length(name.lev))
+  rownames(res)<-colnames(res)<-name.lev
+  res.name=paste(name.lev[row(res)],name.lev[col(res)],sep = ".")
+  m.name=cbind(c(paste(m.3col[,1],m.3col[,2],sep = "."),paste(m.3col[,2],m.3col[,1],sep = ".")),c(m.3col[,3],m.3col[,3]))
+  res[]=as.numeric(m.name[match(res.name,m.name[,1]),2])
+  if(to.dist)
+  {
+    res=as.dist(res)
+  }else{
+    diag(res)=0
+    if(!is.na(idd)){diag(res)[match(m.diag[,1],name.lev)]=as.numeric(m.diag[,3])}
+  }
+  res
+}
 
