@@ -1,4 +1,8 @@
 # All versions of iCAMP package
+- Version 1.8.1 (20250203): fix an error in confidence calculation in functions RC.bin.bigc and RC.bin.cm.
+- Version 1.7.3 (20250111): improve taxa.binphy.big.cm.
+- Version 1.7.2 (20250110): improve taxa.binphy.big.cm.
+- Version 1.7.1 (20241224): add functions metaset and taxa.binphy.big.cm.
 - Version 1.6.7(20241128): revise change.sigindex to allow input has different randomization times in different bins.
 - Version 1.6.6(20241126): revise icamp.boot to rank treatments according to the order of levels.
 - Version 1.6.5(20231223): fix a bug when input comm is data.frame in the functions bNRI.cm, bNRI.big.cm, bNRI.bin.cm, bNTI.cm, bNTI.big.cm, bNTI.bin.cm, NRI.cm, NRI.cm.big, NTI.com, and NTI.cm.big.
