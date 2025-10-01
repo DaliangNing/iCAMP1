@@ -1,4 +1,5 @@
 # All versions of iCAMP package
+- Version 1.8.2 (20250930): fix error in metaset, NRI.cm, and RC.bin.cm, which may affect icamp.cm.
 - Version 1.8.1 (20250203): fix an error in confidence calculation in functions RC.bin.bigc and RC.bin.cm.
 - Version 1.7.3 (20250111): improve taxa.binphy.big.cm.
 - Version 1.7.2 (20250110): improve taxa.binphy.big.cm.
