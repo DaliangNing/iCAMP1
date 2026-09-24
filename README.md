@@ -1,5 +1,5 @@
 # iCAMP
-Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis ([Latest version 1.8.1, 2025-2-3](https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions))
+Infer Community Assembly Mechanisms by Phylogenetic bin-based null model analysis ([Latest version 1.9.1, 2026-9-23](https://github.com/DaliangNing/iCAMP1/tree/master/RPackage/AllVersions))
 
 Daliang Ning
 
@@ -9,6 +9,7 @@ Daliang Ning
   - Ning D, Wang Y, Fan Y, et al. Environmental stress mediates groundwater microbial community assembly. Nature Microbiology (2024). [https://doi.org/10.1038/s41564-023-01573-x](https://doi.org/10.1038/s41564-023-01573-x) Genearl framework about stress-assembly relationship was proposed in this study ([Data&Code](https://github.com/DaliangNing/iCAMP1/tree/master/Publication2))
 - Recommendation: [NST (stochasticity assessment tool)](https://github.com/DaliangNing/NST) 
 ## News
+- 2026.9.23 Version 1.9.1 uploaded to CRAN [https://cran.r-project.org/web/packages/iCAMP/index.html](https://cran.r-project.org/web/packages/iCAMP/index.html).
 - 2026.8.25 Version 1.8.6 uploaded to CRAN [https://cran.r-project.org/web/packages/iCAMP/index.html](https://cran.r-project.org/web/packages/iCAMP/index.html).
 - 2025.2.3 Version 1.8.1 fixed a serious error in both RC.bin.bigc and RC.bin.cm. The error can lead to miscounting of drift as dispersal limitation when big.method = ‘loop’ and sig.index = "confidence". The error affects datasets with >150 samples and using sig.index='confidence', leading to very low or zero value of 'Drift'. This was found by Chen-feng Lin in [Issue 70](https://github.com/DaliangNing/iCAMP1/issues/70). 
 - 2024.1.11 Our paper about stress-assembly relationship is published on Nature Microbiology today. [https://doi.org/10.1038/s41564-023-01573-x](https://doi.org/10.1038/s41564-023-01573-x)
